@@ -20,10 +20,12 @@ def control_output(results, cli_args):
         # Вывод данных по умолчанию — в терминал построчно.
         default_output(results)
 
+
 def default_output(results):
     """Вывод данных в терминал построчно."""
     for row in results:
         print(*row)
+
 
 def pretty_output(results):
     """Вывод данных в формате PrettyTable."""
@@ -36,6 +38,7 @@ def pretty_output(results):
     table.add_rows(results[1:])
     # Печатаем таблицу.
     print(table)
+
 
 def file_output(results, cli_args):
     """Создание директории и запись данных в файл."""

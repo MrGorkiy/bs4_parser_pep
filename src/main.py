@@ -137,7 +137,8 @@ def pep(session):
             error_message = (f'Несовпадающие статусы:\n'
                              f'{url}\n'
                              f'Статус в карточке: {status_pep_page}\n'
-                             f'Ожидаемые статусы: {EXPECTED_STATUS[preview_status]}')
+                             f'Ожидаемые статусы: '
+                             f'{EXPECTED_STATUS[preview_status]}')
             logging.warning(error_message)
     for status in status_sum:
         results.append((status, status_sum[status]))
