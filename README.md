@@ -64,3 +64,5 @@ python main.py latest-versions -o pretty
 ```
 python main.py whats-new
 ```
+
+Автор: [MrGorkiy](https://github.com/MrGorkiy)
