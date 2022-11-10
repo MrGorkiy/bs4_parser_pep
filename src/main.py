@@ -3,16 +3,12 @@ import re
 from urllib.parse import urljoin
 
 import requests_cache
-from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 from configs import configure_argument_parser, configure_logging
 from constants import BASE_DIR, EXPECTED_STATUS, MAIN_DOC_URL, PEP_URL
 from outputs import control_output
-from utils import find_tag, get_response, get_soup
-
-
-
+from utils import find_tag, get_soup
 
 
 def whats_new(session):

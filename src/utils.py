@@ -1,7 +1,7 @@
 import logging
 
-from requests import RequestException
 from bs4 import BeautifulSoup
+from requests import RequestException
 
 from exceptions import ParserFindTagException
 
